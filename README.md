@@ -197,6 +197,55 @@ python test_backend.py
 python demo.py
 ```
 
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. **Prepare for deployment:**
+   ```bash
+   # Make sure your .env.local contains your API key (not committed to git)
+   # The .env file should only contain placeholder values
+   ```
+
+2. **Push to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Initial commit - AI Course Generator"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/ai-course-generator.git
+   git push -u origin main
+   ```
+
+3. **Deploy on Vercel:**
+   - Install Vercel CLI: `npm i -g vercel`
+   - Login: `vercel login`
+   - Deploy: `vercel --prod`
+   - Set environment variables in Vercel dashboard:
+     - `GOOGLE_API_KEY`: Your Google AI API key
+     - `GEMINI_API_KEY`: Your Google AI API key
+
+4. **Environment Variables Setup:**
+   - Go to your Vercel project dashboard
+   - Navigate to Settings → Environment Variables
+   - Add your API keys with proper values
+   - Redeploy if necessary
+
+### Local Development Security
+
+**IMPORTANT:** Your API key is now safely stored in `.env.local` which is ignored by git. The `.env` file contains only placeholder values and is safe to commit.
+
+**File Structure:**
+- `.env` - Contains placeholder values (safe to commit)
+- `.env.local` - Contains your real API key (ignored by git)
+- `.env.example` - Template for other developers
+
+### Production Considerations
+
+- **API Rate Limits:** The app includes intelligent rate limiting and model fallbacks
+- **Error Handling:** Comprehensive error handling for API failures
+- **Security:** Environment variables are properly configured for production
+- **Performance:** Uses the latest Gemini models with fallback options
+
 ## 🤝 Contributing
 
 1. Fork the repository

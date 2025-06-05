@@ -17,6 +17,13 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
+from dotenv import load_dotenv
+
+# Load environment variables - prioritize .env.local for development
+if os.path.exists('.env.local'):
+    load_dotenv('.env.local')
+else:
+    load_dotenv('.env')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
