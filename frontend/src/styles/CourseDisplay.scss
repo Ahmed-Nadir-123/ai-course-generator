@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.course-display {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  margin-top: 2rem;
+  padding: 2rem;
+  button {
+    background: $secondary-color;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  pre {
+    background: #f5f6fa;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+}
+
+.download-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  button {
+    background: $secondary-color;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.error {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.course-content {
+  margin-top: 1rem;
+}
