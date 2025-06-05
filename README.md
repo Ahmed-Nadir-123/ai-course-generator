@@ -54,7 +54,7 @@ A comprehensive AI-powered course generation application that functions like Cha
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/ai-course-generator.git
+git clone https://github.com/Ahmed-Nadir-123/ai-course-generator.git
 cd ai-course-generator
 ```
 
@@ -284,7 +284,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Check the console for specific error messages
 
 ### Getting Help
-- Check the [Issues](https://github.com/yourusername/ai-course-generator/issues) page
+- Check the [Issues](https://github.com/Ahmed-Nadir-123/ai-course-generator/issues) page
 - Review the troubleshooting section above
 - Ensure all prerequisites are met
 
@@ -301,8 +301,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@Ahmed-Nadir-123](https://github.com/Ahmed-Nadir-123)
+- Email: ahmednader2003331@gmail.com
 
 ## 🙏 Acknowledgments
 
